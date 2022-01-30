@@ -37,11 +37,11 @@ To collect the data we will use an [unofficial Youtube API](https://rapidapi.com
 
 When you go to the API's page you will find a list of endpoints, for the purpose of this tutorial we are interested in two endpoints:
 
-1. **/video/comments/** : this enpdoint will give the fist 20 comments and more importantly a token to continue to the next page of comments, this endpoint needs one argument:
+1. **/video/comments/** : this endpoint will give the fist 20 comments and more importantly a token to continue to the next page of comments, this endpoint needs one argument:
 
 * *video_id* (string)
 
-2. **/video/comments/continuation/** : this enpdoint will give us the next 20 comments and the continuation token to perform the next request, this endpoint takes two arguments:
+2. **/video/comments/continuation/** : this endpoint will give us the next 20 comments and the continuation token to perform the next request, this endpoint takes two arguments:
 
 * *video_id* (string)
 * *continuation_token* (string)
@@ -61,7 +61,7 @@ class Comments:
 
 We can easily map the response using the `**` operator.
 
-Here's an exemple of the expected data response:
+Here's an example of the expected data response:
 
 ![API Response structure](/assets/images/comments.png)
 
@@ -99,7 +99,7 @@ def continuation_call(video_id: str, continuation_token: str) -> Comments:
     return Comments(**response.json())
 ```
 
-We can unify the process in a seperate function to handle both cases at once:
+We can unify the process in a separate function to handle both cases at once:
 
 ```python
 def get_comments(video_id: str, continuation_token: str = None) -> Comments:
@@ -129,11 +129,11 @@ with open("comments.json", mode="w", encoding="utf-8") as file:
 
 ## Predict the sentiments on the comments
 
-To predict the sentiments on the comment, I am using a Transformer based model called [roBERTa](https://arxiv.org/pdf/2010.12421.pdf), which uses an attention mechanism based on how our own cerebral cortex works. When we examine a picture to describe it, we naturally focus our attention on a few key places that we know contain crucial information. We don't examine every detail of the image with the same rigor. As a result, when dealing with complex data, this approach can help save processing resources.
+To predict the sentiments on the comment, I am using a Transformer based model called [roBERTa](https://arxiv.org/pdf/2010.12421.pdf), which uses an attention mechanism based on how our cerebral cortex works. When we examine a picture to describe it, we naturally focus our attention on a few key places that we know contain crucial information. We don't examine every detail of the image with the same rigor. As a result, when dealing with complex data, this approach can help save processing resources.
 
 Similarly, when an interpreter translates material from a source language to a target language, they know which terms in a source sentence correspond to a specific term in the translated sentence based on previous experience.
 
-For those interested in a more detailed explaination of Transformer based models you can read a primer article I wrote a few months back.
+For those interested in a more detailed explanation of Transformer based models, you can read a primer article I wrote a few months back.
 
 [Sentiment Analysis iOS Application Using Hugging Face’s Transformers Library
 ](https://medium.com/fritzheartbeat/sentiment-analysis-ios-application-using-hugging-faces-transformers-library-7ae4df1b3150)
