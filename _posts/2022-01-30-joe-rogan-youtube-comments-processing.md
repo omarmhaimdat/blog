@@ -1,5 +1,5 @@
 ---
-title: "Sentiment Analysis on Joe Rogan Youtube Comments Section"
+title: "Sentiment Analysis on Joe Rogan's Youtube Comments"
 categories:
   - Blog
   - Tutorials
