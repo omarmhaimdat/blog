@@ -10,7 +10,7 @@ tags:
   - data manipulation
 ---
 
-![Article structure](/assets/images/joe-rogan-sentiment-analysis.jpg)
+![Article structure](/assets/images/joe-rogan-sentiment-analysis.jpg){: .align-center}
 Photo by <a href="https://unsplash.com/@theshubhamdhage?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shubham Dhage</a> on <a href="https://unsplash.com/s/photos/emoji-face?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 ## What is Sentiment Analysis?
