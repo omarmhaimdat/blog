@@ -215,3 +215,12 @@ def get_max_min(my_list: List[int]) -> Optional[Tuple[int, int]]:
     return None, None
 ```
 
+## Conclusion
+
+There are many improvements that could be performed, such as using print statements rather the built-in logging module, or the use of inconsistent argument types for in function and many more.
+One of the first step to improve your overall coding style is to use a strict linter such as [`PyLint`](https://pylint.org) or [`SonarLint`](https://www.google.com/search?client=safari&rls=en&q=sonarlint&ie=UTF-8&oe=UTF-8) and integrate them into your CI.
+
+
+<a href="https://rapidapi.com/omarmhaimdat/api/youtube-search6/" target="_blank">
+<img src="https://files.readme.io/7002e7f-c563a12-rapidapi-badge-dark.png" width="215" alt="Connect on RapidAPI">
+</a>
