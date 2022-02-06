@@ -217,7 +217,7 @@ def get_max_min(my_list: List[int]) -> Optional[Tuple[int, int]]:
 
 ## Conclusion
 
-There are many improvements that could be performed, such as using print statements rather the built-in logging module, or the use of inconsistent argument types for in function and many more.
+There are many improvements that could be performed, such as using print statements rather than the built-in logging module, or the use of inconsistent argument types for function and many more.
 One of the first step to improve your overall coding style is to use a strict linter such as [`PyLint`](https://pylint.org) or [`SonarLint`](https://www.google.com/search?client=safari&rls=en&q=sonarlint&ie=UTF-8&oe=UTF-8) and integrate them into your CI.
 
 
