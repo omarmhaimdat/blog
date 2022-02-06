@@ -9,7 +9,7 @@ tags:
   - tutorial
 ---
 
-Python's syntax is very permissive, so it's very easy to write bad code with Python. To standardize code writing, the Python developer community recommends a number of rules so that code is readable, readable by you but also by others. We will see in these article how you can up you code with simple code snippets of **don't** and **dos**.
+Python's syntax is very permissive, so it's very easy to write bad code with Python. To standardize code writing, the Python developer community recommends a number of rules so that code is readable, readable by you but also by others. We will see in these article how you can improve your code with simple code snippets of **don't** and **dos**.
 
 Try re-reading some code you wrote “quickly” a month, six months, or a year ago. If the code is just a few lines long, you might find your way around, but if it's tens or even hundreds of lines long, it might be different. The creator of Python, Guido van Rossum, puts it simply:
 
