@@ -209,7 +209,7 @@ You can also improve this function by adding type hints:
 ```python
 from typing import List, Optional, Tuple
 
-def get_max_min(my_list: List[int]) -> Optional[Tuple[int, int]]:
+def get_max_min(my_list: List[int]) -> Tuple[Optional[int], Optional[int]]:
     if my_list:
         return max(my_list), min(my_list)
     return None, None
